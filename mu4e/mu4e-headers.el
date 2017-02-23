@@ -457,7 +457,7 @@ while our display may be different)."
 It's a cons cell with the car element being the From: prefix, the
 cdr element the To: prefix.")
 
-(defsubst mu4e~headers-from-or-to (msg)
+(defun mu4e~headers-from-or-to (msg)
   "When the from address for message MSG is one of the the user's addresses,
 \(as per `mu4e-user-mail-address-list'), show the To address;
 otherwise ; show the from address; prefixed with the appropriate
